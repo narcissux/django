@@ -11,7 +11,7 @@ def handle_github_hook(request):
     secret = str.encode("galgameplay")
     hashhex = hmac.new(secret, request.body, digestmod='sha1').hexdigest()
     if hmac.compare_digest(hashhex, signature):
-        repo = Repo('/home/gwt/sites/docker.narcissu.tk/django')
+        repo = Repo('/home/gwt/sites/docker.narcissu.tk/django/')
         origin = repo.remotes.origin
         origin.pull('--rebase')
         commit = request.json['after'][0:6]
