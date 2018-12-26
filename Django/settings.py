@@ -25,7 +25,7 @@ SECRET_KEY = 'tu2v!o4axk)&ytwp@ucj95=6)uj1^5v65^*v4l!#!fc7t07!ej'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["www.narcissu.tk"]
 
 
 # Application definition
